@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+body{
+    background-color: rgb(247, 247, 179);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+  h1{
+    background-color: black;
+    color: white;
+    padding: .4em 1em;
+  }
+.chessboard{
+    width: 42em;
+    height: 42em;
+    border: 1rem solid gray;
+}
+.white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width:5em;
+    height: 5em;
+    background-color: white;
+    text-align: center;
+}
+.black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width:5em;
+    height: 5em;
+    color: white;
+    background-color:black;
+    text-align: center;
+    vertical-align:center;
+}
+span{
+    font-size: 2em;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:800px){
+       html{
+        font-size: 12px;
+        min-width: 360px;
+       }
+    }
+
+    @media screen and (max-width:600px){
+        html{
+         font-size: 10px;
+         min-width: 360px;
+        }
+     }
+     @media screen and (max-width:460px){
+        html{
+         font-size: 9px;
+         min-width: 360px;
+        }
+     }
+     @media screen and (max-width:400px){
+        html{
+         font-size: 7px;
+         min-width: 360px;
+        }
+     }
